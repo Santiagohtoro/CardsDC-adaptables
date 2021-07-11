@@ -35,7 +35,7 @@ h1{
     padding: 0px;
 }
 .logo::before{
-    content: url(../img/logo\ 1.svg);
+    content: url(../img/logo.svg);
     padding-left: 10px;
 }
 
