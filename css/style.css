@@ -2,35 +2,68 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 16px;
+    font-size: 100%;
     font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 /*barras superiores*/
 
 /*descuentos*/
 .superior{
-    background-color: #D1891C;
-    font-size: 1rem;
-    padding-left: 20px;
+    background-color: #1CD1B0;
+    font-size: 0.8rem;
+    padding: 2px 10px;
 }
 
-/*titulo*/
+/*Textos*/
+a{
+    text-decoration: none;
+}
+li a{
+    color: white;
+}
+
 h1{
     background-color: #00669F;
     color: white;
-    font-size: 2rem;
     font-weight: normal;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0px;
+}
+.logo::before{
+    content: url(/img/logo\ 1.svg);
+    padding-left: 10px;
 }
 
-/*tarjetas*/
+/*barra de navegacion*/
+
+nav.bar-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #001D2D;
+    color: white;
+    height: 40px;
+}
+li.opciones{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/*contenedor tarjetas*/
 
 .flex-contain{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/*tarjetas*/
 
 .Card{
     position: relative;
@@ -78,7 +111,7 @@ h2{
     font-size: 0.9rem;
     margin: 30px;
 }
-button{
+button.informacion{
     background-color: #00669F ;
     color: white;
     border-radius: 5px;
@@ -87,6 +120,17 @@ button{
     position: absolute;
     bottom: 30px;
     left: 25%;
+}
+
+/*contenedor login*/
+
+main.flex-contain{
+    min-height: calc(100vh - 138.8px);
+}
+section#container{
+    margin: 15vh 0px;
+    width: 50%;
+    max-width: 500px;
 }
 
 /*añadir*/
@@ -100,7 +144,7 @@ button{
     z-index: 5;
 }
 
-/*final de pagina*/
+/*final de pagina cards*/
 
 footer{
     color: white;
@@ -112,9 +156,91 @@ footer{
     justify-content: space-between;
     align-content: center;
 }
+
+/* contenido forms*/
+
+/*titulo*/
+
+h2#sub-title{
+    font-weight:900;
+    font-size: 3rem;
+    text-align: left;
+}
+
+/*forms*/ 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input, select.estilo{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    margin: 10px 0px;
+    border: black solid 2px;
+}
+button#ingreso{
+    width: 100%;
+    height: 40px;
+    margin: 30px 0px 15px 0px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #1CD1B0;
+    border-radius: 20px;
+}
+#pregunta{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*botones registro y contacto*/
+section#botones{
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+button.acciones{
+    width:48%;
+    min-width: 150px;
+    height: 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 10px;
+
+}
+button#send{
+    margin-left: 8px;
+    background-color: #1CD1B0;
+}
+button#clean{
+    margin-right: 8px;
+    background-color: #888888;
+}
+
+
+/*contactame*/
+#comment{
+    height: 200px;
+    padding: 15px;
+    margin: 10px 0px;
+    border: black solid 2px;
+}
+
+/*footers*/
+footer#centrado{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .github{
     height: 20px;
 }
+
+
 @media (max-width:769px)
 {
     .foto{
@@ -126,6 +252,9 @@ footer{
 }
 
 @media (max-width:426px){
+    h2#sub-title{
+        font-size: 2rem;
+    }
     #add{
         width: 50px;
         height: 50px;
@@ -140,5 +269,16 @@ footer{
     footer{
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width:997px){
+    section#botones{
+        display: flex;
+        justify-content: center;
+    }
+    button#registrar, button#limpiar{
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }

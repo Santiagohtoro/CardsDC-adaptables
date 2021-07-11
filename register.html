@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+        </style>
+        <title>Registro</title>
+    </head>
+    <body>
+        <header>
+            <p class="superior">20% de descuento en todos los productos!</p>
+            <h1 class="Titulo logo">Nombre Tienda</h1>
+            <nav class="bar-nav">
+                <ul type="none">
+                    <li class="opciones"><a href="./contactame.html">Contacto</a></li>
+                    <li class="opciones"><a href="./login.html">Ingresar</a></li>
+                    <li class="opciones"><a href="./index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="flex-contain">
+            <section id="container">
+                <h2 id="sub-title">Registro</h2>
+                <form action="#" method="POST">
+                    <input class="estilo" type="text" placeholder="Nombre completo">
+                    <input class="estilo" type="email" placeholder="Correo electronico">
+                    <input class="estilo" type="password" placeholder="Contraseña">
+                    <select name="pais" class="estilo">
+                        <option value="Select" disabled selected hidden>Seleccione su pais</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                    </select>
+                    <section id="botones">
+                        <button type="reset" class="acciones" id="clean">Resetear</button>
+                        <button type="submit" class="acciones" id="send">Registrar</button>
+                    </section>
+                </form>
+                <p id="pregunta">¿Ya tienes una cuenta? <a href="/login.html"> Ingresar</a></p>
+            </section>
+        </main>
+        <footer id="centrado">
+            Todos los derechos reservados a FRONT END 1
+        </footer>
+    </body>
+</html>
