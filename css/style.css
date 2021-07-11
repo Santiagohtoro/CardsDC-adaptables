@@ -34,7 +34,7 @@ h1{
     font-size: 1.5rem;
     padding: 0px;
 }
-.logo:before{
+h1:before{
     content: url(../img/logo.svg);
     padding-left: 10px;
 }
