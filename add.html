@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+    </style>
+    <title>Añadir SuperHeroe</title>
+</head>
+<body>
+    <header>
+        <p class="superior" id="">20% de descuento en todos los productos!</p>
+        <h1 class="Titulo">Card Super Heroes</h1>
+        <nav class="bar-nav">
+        <ul type="none">
+            <li class="opciones"><a href="./login.html">Ingresar</a></li>
+            <li class="opciones"><a href="./register.html">Registrarme</a></li>
+            <li class="opciones"><a href="./index.html">Inicio</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main class="flex-contain" id="contain-add">
+        <section class="cont-add">
+            <h2 class="titl-add">Añadí tu super!</h2>
+            <p class="deco-text" id="text-center">Agregá tu personaje favorito completando las opciones.</p>
+            <form class="add-form">
+                <div class="info1">
+                    <label for="name" id="" class="deco-text">*Nombre</label>
+                    <input type="text" name="name" id="name" class="add">
+                    <label for="date" class="deco-text">Fecha</label>
+                    <input type="date" name="date" id="date" class="add">
+                    <textarea name="Descripcion" id="description" placeholder="Descripcion"></textarea>
+                </div>
+                <div class="info2">
+                    <label for="species" class="deco-text">*Especie</label>
+                    <select name="species" id="species">
+                        <option value="select" disabled selected hidden>Selecione su especie</option>
+                        <option value="Kriptonianos">Kriptonianos</option>
+                        <option value="Superhumanos">Superhumanos</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Monitors">Monitors</option>
+                        <option value="Atlanteanos">Atlanteanos</option>
+                    </select>
+                    <fieldset>
+                        <label for="picture" class="deco-text">Agregar foto</label>
+                        <input type="file" name="picture" id="picture" accept=".jpg, .png">
+                    </fieldset>
+                    <fieldset>
+                        <legend class="deco-text margin-text">Poderes</legend>
+                        <input type="checkbox" name="Fly" value="Volar">
+                        <label for="fly" class="lbl">Volar</label><br>
+                        <input type="checkbox" name="intelligence" value="SuperInteligencia">
+                        <label for="intelligence" class="lbl">SuperInteligencia</label><br>
+                        <input type="checkbox" name="sight" value="Vista de rayo láser">
+                        <label for="sight" class="lbl">Vista de rayo láser</label><br>
+                        <input type="checkbox" name="rich" value="Billetera gorda">
+                        <label for="rich" class="lbl">Billetera gorda</label><br>
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <legend class="deco-text">Tipo de personaje</legend>
+                        <input type="radio" name="hero" value="Héroe / Heroina" class="check">
+                        <label for="hero" class="lbl">Héroe / Heroina</label><br>
+                        <input type="radio" name="type" value="Villano / Villana" class="check">
+                        <label for="villain" class="lbl">Villano / Villana</label><br>
+                    </fieldset>
+                </div>
+                
+            </form>
+            <button type="submit" id="btn-inf">Añadir</button>
+        </section>
+        
+    </main>
+    <footer id="centrado">
+        Todos los derechos reservados a FRONT END 1
+    </footer>
+</body>
+</html>

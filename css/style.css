@@ -85,21 +85,21 @@ li.opciones{
 
 .like{
     width: 40px;
-    position: relative;
+    position: absolute;
     left: 20px;
-    top: -245px;
+    top: 20px;
 }
 
 .foto{
     top: -70px;
-    left: 20%;
+    left: 32%;
     position: relative;
     width: 120px;
     border-radius: 50%;
     box-shadow: 3px 3px 3px grey;
 }
 
-h2{
+h2.titl-position{
     position: relative;
     text-align: center;
     top: -50px;
@@ -135,13 +135,24 @@ section#container{
 
 /*añadir*/
 
+
 #add{
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color:#00669F;
     width: 50px;
     height: 50px;
     position: fixed;
     bottom: 60px;
     left: 90%;
     z-index: 5;
+    text-align: center;
+}
+button#add:active{
+    background-color: #001D2D;
 }
 
 /*final de pagina cards*/
@@ -173,7 +184,7 @@ form{
     flex-direction: column;
     justify-content: space-between;
 }
-input, select.estilo{
+input.estilo, select.estilo{
     width: 100%;
     height: 40px;
     padding-left: 15px;
@@ -240,16 +251,104 @@ footer#centrado{
     height: 20px;
 }
 
+/*Añadir Superheroe*/
 
-@media (max-width:769px)
-{
-    .foto{
-        left: 14.5%;
-    }
-    button{
-        left: 19%;
-    }
+/*contenedor*/
+main#contain-add{
+    min-height: calc(100vh - 138.8px);
+    margin:50px 0px;
 }
+
+/*titulo*/
+h2.titl-add{
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10px;
+}
+.deco-text{
+    font-weight: lighter;
+    font-size: 1rem;
+    color: white;
+}
+.cont-add{
+    background-color: #00669F;
+    border-radius: 50px;
+    width: 60%;
+}
+label.lbl{
+    font-size: 13px;
+}
+.check{
+    width: 17px;
+    height: 17px;
+}
+input.add{
+    margin: 10px 0px;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 90px;
+    height: 50px;
+    padding-left: 10px;
+}
+textarea#description{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
+div.info1, div.info2{
+    width: 40%;
+    margin: 20px 20px;
+}
+label{
+    color: white;
+}
+form.add-form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+hr{
+    height: 2px;
+    background-color: white;
+    margin: 15px 0px;
+}
+#species{
+    margin: 10px 0px;
+    width: 100%;
+    height: 50px;
+}
+input[type="file"]#picture{
+    margin: 25px 0px;
+    width: 100%;
+    display: flex;
+}
+#text-center{
+    text-align: center;
+}
+button#btn-inf{
+    font-weight: bold;
+    font-size: 30px;
+    width: 40%;
+    height: 50px;
+    position: relative;
+    left: 30%;
+    bottom: 10px;
+    background-color: #1CD1B0;
+    color: #001D2D;
+    border-radius: 15px;
+}
+button#btn-inf:active{
+    background-color: #001D2D;
+    color: #1CD1B0;
+    
+}
+
+
 
 @media (max-width:426px){
     h2#sub-title{
@@ -270,6 +369,7 @@ footer#centrado{
         display: flex;
         justify-content: center;
     }
+
 }
 
 @media (max-width:997px){
