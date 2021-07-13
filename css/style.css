@@ -276,6 +276,7 @@ h2.titl-add{
     background-color: #00669F;
     border-radius: 50px;
     width: 60%;
+    min-width: 350px;
 }
 label.lbl{
     font-size: 13px;
